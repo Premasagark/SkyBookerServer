@@ -1,5 +1,5 @@
 import { rateLimit } from "express-rate-limit";
-import { RedisStore, type RedisReply } from "rate-limit-redis";
+import { RedisStore} from "rate-limit-redis";
 import RedisClient from "ioredis";
 
 const REDIS_URL = process.env.REDIS_URL || "redis://localhost:6379";
@@ -23,11 +23,11 @@ const client = new RedisClient(REDIS_URL);
 // 	}),
 // })
 
-export { limiter };
+// export { limiter };
 
-import { rateLimit } from "express-rate-limit";
-import { RedisStore } from "rate-limit-redis";
-import RedisClient from "ioredis";
+// import { rateLimit } from "express-rate-limit";
+// import { RedisStore } from "rate-limit-redis";
+// import RedisClient from "ioredis";
 
 // const client = new RedisClient(process.env.REDIS_URL);
 
